@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    background-color: #181818;
+}
+
+.container{
+    background-color: #000;
+    width: 80%;
+    padding: 1.8rem 0 3rem 0;
+    margin: 5rem auto 2rem auto;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1::after{
+    content: "Button";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-41%, -47%);
+    color: #ff0000;
+    z-index: -1;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background: none;
+    border: none;
+    position: relative;
+    transform: translate(-2%, -8%);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #ffffff72;
+    border-radius: 6px;
+    z-index: -1;
+    /*  */
+    backdrop-filter: blur(3px);
+}
+
+button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-47%, -34%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, #ff0000, #ff8181);
+    border-radius: 6px;
+    z-index: -2;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    transform: translate(0, 0);
+}
+
+button:hover::before{
+    background: #ffffff93;
+
+}
+
+button:hover::after{
+    transform: translate(-50%, -50%);
+}
+
+.btn2::after{
+    background: linear-gradient(30deg, #2700ff, #8181ff);
+}
+
+.btn3::after{
+    background: linear-gradient(30deg, #00ff00, #a9ffa9);
+}
+
+.btn4::after{
+    background: linear-gradient(30deg, #ff9900, #fdd999);
+}
+
+.btn5::after{
+    background: linear-gradient(30deg, #c300ff, #e699ff);
+}
+
+.btn6::after{
+    background: linear-gradient(30deg, #ff6600, #ffa990);
+}
+
+.btn7::after{
+    background: linear-gradient(30deg, #ff0000, #2700ff 80%);
+}
+
+.btn8::after{
+    background: linear-gradient(90deg, #00ff00, #ff9900 80%);
+}
+
+.btn9::after{
+    background: linear-gradient(30deg, #c300ff, #ff6600 80%);
+}
+
+.btn10::after{
+    background: linear-gradient(30deg, #ff0000, #2700ff, #00ff00 80%);
+}
+
+.btn11::after{
+    background: linear-gradient(30deg, #ff9900, #c300ff, #ff6600 80%);
+}
